@@ -636,13 +636,15 @@
         .footer {
             text-align: center;
             padding: 35px;
-            background: rgba(100, 255, 218, 0.08);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            color: #666;
+            background: linear-gradient(180deg, 
+                rgba(20, 40, 65, 0.65) 0%, 
+                rgba(15, 32, 55, 0.85) 100%);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            color: rgba(100, 255, 218, 0.7);
             font-size: 14px;
             position: relative;
-            border-top: 1px solid rgba(100, 255, 218, 0.15);
+            border-top: 1px solid rgba(100, 255, 218, 0.2);
         }
 
         .footer::before {
@@ -653,8 +655,11 @@
             transform: translateX(-50%);
             width: 100px;
             height: 4px;
-            background: linear-gradient(90deg, rgba(100, 255, 218, 0.5), rgba(0, 188, 212, 0.5));
+            background: linear-gradient(90deg, 
+                rgba(100, 255, 218, 0.6), 
+                rgba(0, 188, 212, 0.6));
             border-radius: 2px;
+            box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
         }
 
         .footer-heart {
